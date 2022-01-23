@@ -3,7 +3,7 @@
 Pager使用`pager:list`指令插入文章列表
 
 ```html
-{pager:list id=listId}
+{pager:list id="listId"}
 <a href= "[list:link]">[list:title]</a>
 {/pager:list}
 ```
