@@ -7,10 +7,10 @@ Pager使用分页条标签插入文章列表分页功能，分页条标签必须
 直接使用`[page:bar]`即可导入系统内置的完整分页条，示例代码如下。
 
 ```html
-{pager:list id=listId}
+{pager:list id="listId"}
 <a href= "[list:link]">[list:title]</a>
 {/pager:list}
-{pager:page size=10}
+{pager:page size="10"}
 [page:bar]
 {/pager:page}
 ```
