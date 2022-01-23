@@ -4,13 +4,15 @@ Pager使用分页条标签插入文章列表分页功能，分页条标签必须
 
 ## 使用内置分页条
 
-直接使用`{page:bar}`即可导入系统内置的完整分页条，示例代码如下。
+直接使用`[page:bar]`即可导入系统内置的完整分页条，示例代码如下。
 
 ```html
 {pager:list id=listId}
 <a href= "[list:link]">[list:title]</a>
 {/pager:list}
-{page:bar}
+{pager:page size=10}
+[page:bar]
+{/pager:page}
 ```
 
 ## 自定义分页条
@@ -19,10 +21,11 @@ Pager使用分页条标签插入文章列表分页功能，分页条标签必须
 
 | 占位符标签 | 说明 |
 | --- | --- |
-| {page:current} | 当前页码 |
-| {page:count} | 总页数 |
-| {page:rows} | 总数据行数 |
-| {page:index} | 首页链接 |
-| {page:pre} | 前一页链接 |
-| {page:next} | 下一页链接 |
-| {page:last} | 尾页链接 |
+| [page:total] | 总页数 |
+| [page:href] | 文章内容页链接 |
+| [page:current] | 当前页码 |
+| [page:currentClass] | 当前页码类，用来标记链接是否为当前页 |
+| [page:pre] | 前一页链接 |
+| [page:next] | 下一页链接 |
+| [page:first] | 首页链接 |
+| [page:last] | 尾页链接 |
