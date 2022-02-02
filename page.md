@@ -10,7 +10,7 @@ Pager使用分页条标签插入文章列表分页功能，分页条标签必须
 {pager:list id="listId"}
 <a href= "[list:link]">[list:title]</a>
 {/pager:list}
-{pager:page size="10"}
+{pager:pagebar size="10"}
 [page:bar]
 {/pager:page}
 ```
@@ -29,3 +29,17 @@ Pager使用分页条标签插入文章列表分页功能，分页条标签必须
 | [page:next] | 下一页链接 |
 | [page:first] | 首页链接 |
 | [page:last] | 尾页链接 |
+
+以下一是各自定义分页条的实例代码：
+
+```html
+<div>
+    <a class="pager-page-item" href="[page:first]">首页</a>
+    <a class="pager-page-item" href="[page:pre]">上一页</a>
+    {pager:pagelink currentClass="pager-page-item-current"}
+    <a class="pager-page-item [page:currentClass]" href="[page:href]">[page:index]</a>
+    {/pager:pagelink}
+    <a class="pager-page-item" href="[page:next]">下一页</a>
+    <a class="pager-page-item" href="[page:last]">尾页</a>
+</div>
+```
